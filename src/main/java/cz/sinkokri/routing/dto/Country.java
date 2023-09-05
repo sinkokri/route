@@ -18,8 +18,8 @@ import java.util.List;
 public class Country {
 
     @JsonProperty("cca3")
-    public String countryCode;
+    private String countryCode;
 
     @JsonProperty("borders")
-    public List<String> borderCountries;
+    private List<String> borderCountries;
 }
