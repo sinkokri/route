@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Route {
-    public List<String> route;
+
+    private List<String> route;
 
 }

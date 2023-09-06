@@ -4,3 +4,5 @@ route:
 spring:
   application:
     name: land-route
+server:
+  port: 8080

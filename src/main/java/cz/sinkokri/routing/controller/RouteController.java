@@ -20,7 +20,6 @@ public record RouteController(RoutingService routingService) {
     public ResponseEntity<Route> getRoute(@PathVariable String origin, @PathVariable String destination) {
         log.info("Received getRoute with origin {} and destination {}", origin, destination);
         var route = routingService.findRoute(origin, destination);
-        // TODO better with @ControllerAdvice
         return route.getRoute().isEmpty() ? new ResponseEntity<>(HttpStatus.BAD_REQUEST) :
                 ResponseEntity.ok(route);
     }
