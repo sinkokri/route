@@ -4,7 +4,6 @@ import cz.sinkokri.routing.dto.Route;
 
 
 public interface RoutingService {
-
     Route findRoute(String origin, String destination);
 
 }
